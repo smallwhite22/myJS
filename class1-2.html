@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="js/new.js"></script>
 </head>
-<style>
-    #demo {
-        width: 100px;
-        height: 111px;
-        background-color: #fff;
+<script>
+    function changePic() {
+        document.pic.src = ("img/2.jpg");
     }
-</style>
+
+    function changePic2() {
+        document.pic.src = ("img/1.jpg");
+    }
+</script>
 
 <body>
-    <div class="title"><a href="class1-1.html">圖片交換</a></div>
+    <img src="img/1.jpg" alt="" name="pic" onmouseover="changePic()" onmouseout="changePic2()">
 </body>
 
 </html>
